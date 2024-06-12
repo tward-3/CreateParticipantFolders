@@ -4,7 +4,6 @@ $sourceDirectory = " "
 $files = Get-ChildItem -Path $sourceDirectory -File -Filter "*.fif"
 
 foreach ($file in $files) {
-
     # Get the first 9 characters of the file name (participant ID; adjust length as needed)
     $folderName = $file.Name.Substring(0,9)
 
@@ -19,9 +18,7 @@ foreach ($file in $files) {
 $logFiles = Get-ChildItem -Path $sourceDirectory -File -Filter "*.txt"
 
 foreach ($file in $logFiles) {
-
     $folderPath = Join-Path -Path $sourceDirectory -ChildPath $folderName
     Move-Item -Path $file.FullName -Destination $folderPath -Force
     Write-Output $folderPath
-
 }
