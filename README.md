@@ -1,6 +1,6 @@
 Given a directory of MEG files (in this case a .fif and .txt file per person) containing all participants, this PowerShell script will create a folder based on the participant ID, and move .fif and .txt files into their corresponding participant folder.
 
-The current functionality of this script assumes three things:
+**The current functionality of this script assumes four things:**
 
 1- Each participant has one .fif file, and one .txt log file. 
 
