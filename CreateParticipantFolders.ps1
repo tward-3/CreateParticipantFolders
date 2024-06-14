@@ -1,3 +1,4 @@
+# input path to the folder containing your log and .fif files
 $sourceDirectory = " "
 
 # list all MEG files w/ specified extension (.fif) in src dir
