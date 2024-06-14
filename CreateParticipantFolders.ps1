@@ -18,7 +18,9 @@ foreach ($file in $files) {
 $logFiles = Get-ChildItem -Path $sourceDirectory -File -Filter "*.txt"
 
 foreach ($file in $logFiles) {
-    $folderPath = Join-Path -Path $sourceDirectory -ChildPath $folderName
-    Move-Item -Path $file.FullName -Destination $folderPath -Force
-    Write-Output $folderPath
+    $folderName2 = $file.Name.Substring(0,9)
+    $movePath = Join-Path -Path $sourceDirectory -ChildPath $folderName2
+    Move-Item -Path $file.FullName -Destination $movePath -Force
+    Write-Output $file.FullName
+    Write-Output $movePath
 }
