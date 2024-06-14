@@ -5,7 +5,7 @@ $sourceDirectory = " "
 $files = Get-ChildItem -Path $sourceDirectory -File -Filter "*.fif"
 
 foreach ($file in $files) {
-    # Get the first 9 characters of the file name (participant ID; adjust length as needed. If you do adjust, you also need to edit line 21)
+    # Get the first 9 characters of the file name (i.e., participant ID; adjust length as needed. If you do adjust, you also need to edit line 21)
     $folderName = $file.Name.Substring(0,9)
 
     $folderPath = Join-Path -Path $sourceDirectory -ChildPath $folderName
