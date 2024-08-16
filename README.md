@@ -4,7 +4,7 @@ Given a directory of MEG files (in this case a .fif and .txt file per person) co
 
 1- Each participant has one .fif file, and one .txt log file. 
 
-2- Each participant has a unique ID that is located at the beginning of the .fif and log file names.
+2- Each participant has a unique ID that is located at the beginning of both the .fif and the log file names.
 
 3- All files (.fif and log) are currently located in the same directory.
 
